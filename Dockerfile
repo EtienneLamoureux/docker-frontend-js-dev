@@ -11,7 +11,6 @@ RUN apt-get -y install \
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN npm install -g yo bower grunt-cli gulp
 
-VOLUME /dev-env
 WORKDIR /dev-env
 
 EXPOSE 3000
