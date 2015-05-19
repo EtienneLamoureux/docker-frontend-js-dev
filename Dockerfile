@@ -21,11 +21,13 @@ RUN npm install -g \
     generator-gulp-angular \
     generator-gulp-angular-subtask
 
+# Create the development environment
+RUN mkdir /dev-env
+RUN chmod 777 /dev-env
+
 # Additional config for yeoman
 RUN adduser --disabled-password --gecos "" yeoman
 ENV HOME /home/yeoman
-RUN mkdir /dev-env
-RUN chmod 777 /dev-env
 USER yeoman
 
 # Expose default gulp port
