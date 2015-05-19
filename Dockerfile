@@ -22,7 +22,9 @@ RUN npm install -g \
     generator-gulp-angular-subtask
 
 # Additionnal config for yeoman
+RUN adduser --disabled-password --gecos "" yeoman;
 ENV HOME /home/yeoman
+RUN mkdir /dev-env
 RUN chmod 777 /dev-env
 USER yeoman
 
