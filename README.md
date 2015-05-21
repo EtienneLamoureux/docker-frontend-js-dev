@@ -5,6 +5,8 @@ Docker image for frontend javascript development
 This image creates a "development environment" container for frontend javascript projects.
 No need to install and configure tools anymore, just mount your source code inside the container and code away!
 
+This image is available directly on the official [Docker registry](https://registry.hub.docker.com/u/elamoureux/frontend-js-dev/).
+
 Includes
 --------
 The following tools are available inside containers created by this image: 
